@@ -1,16 +1,101 @@
-html,
-body {
-  padding: 0;
-  margin: 0;
-  font-family: -apple-system, BlinkMacSystemFont, Segoe UI, Roboto, Oxygen,
-    Ubuntu, Cantarell, Fira Sans, Droid Sans, Helvetica Neue, sans-serif;
+.pizzaImg{
+  border-radius: 25px;
+  text-align: center;
+  justify-content: center;
 }
-
-a {
-  color: inherit;
+.mainPizza{
+  text-align: center;
+  justify-content: center;
+}
+.imgContainer{
+  border-radius: 50%;
+  justify-content: center;
+  top: -20%
+}
+.pizzaPrice{
+  font-size: 24px;
+  font-weight: 400;
+  color: rgb(223, 39, 39);
+}
+.pizzaDes{
+  font-size: 15px;
+  font-family: 'Times New Roman', Times, serif;
+}
+.pizzaChoose{
+  font-size: 21px;
+  font-weight: 500;
+}
+.imgSize{
+  background-color: teal;
+  color: white;
+  font-size: 14px;
+  padding: 0 5px;
+  border-radius: 10px;
+}
+#checkbox{
+  display: flex;
+}
+.addButton{
+  height: 30px;
+  margin-left: 17px;
+  background-color: rgb(223, 39, 39);
+  color: white;
+  font-weight: 500;
+  border: 0px;
+  font-size: 13px;
+  outline: none;
   text-decoration: none;
 }
-
-* {
-  box-sizing: border-box;
+.quantity{
+  width: 50px;
+  height: 30px;
+}
+.pizza2Img{
+  border-radius: 50%;
+ }
+ #caralzo{
+  font-size: 20px;
+  color:rgb(223, 39, 39);
+}
+#extras{
+  font-size: 17px;
+}
+.cartTotal{
+  margin-right: 20px;
+}
+#wrapper{
+  width: 30%;
+  max-height: 300px;
+  background-color: #333;
+  padding: 40px;
+  padding-top: 10px;
+  color: white;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+.checkoutBtn{
+  height: 30px;
+  font-weight: bold;
+  color: rgb(223, 39, 39);
+  margin-top: 10px;
+  border: 0px;
+  outline: none;
+}
+.paymentMethod{
+  margin-top: 10px;
+  display: flex;
+  flex-direction: column;
+}
+.payButton {
+  padding: 5px;
+  cursor: pointer;
+  margin-bottom: 5px;
+  background-color: white;
+  color: teal;
+  border-radius: 5px;
+  border: none;
+  outline: none;
+  font-size: 15px;
+  font-weight: bold;
 }
