@@ -130,12 +130,14 @@ export const getServerSideProps = async (ctx) => {
   }
 
   const productRes = await axios.get("http://localhost:3000/api/products");
+  const jsonProduct = await productRes.json();
   const orderRes = await axios.get("http://localhost:3000/api/orders");
+  const jsonOrder = await orderRes.json()
 
   return {
     props: {
-      orders: orderRes.data,
-      products: productRes.data,
+      orders: jsonOrder.data,
+      products: jsonProduct.data,
     },
   };
 };

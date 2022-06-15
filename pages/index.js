@@ -34,9 +34,10 @@ export const getServerSideProps = async (ctx) => {
   }
 
   const res = await axios.get('http://localhost:3000/api/products');
+  const jsonData = await res.json();
   return {
     props: {
-      pizzaList: res.data,
+      pizzaList: jsonData.data,
       admin,
     },
   };
