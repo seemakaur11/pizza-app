@@ -19,10 +19,15 @@
     "react-dom": "18.1.0",
     "react-redux": "^8.0.2",
     "react-responsive-carousel": "^3.2.23",
-    "redux": "^4.2.0"
+    "redux": "^4.2.0",
+    "winston": "0.6.2",
+    "winston-mail": "0.2.3"
   },
   "devDependencies": {
     "eslint": "8.17.0",
     "eslint-config-next": "12.1.6"
+  },
+  "peerDependencies": {
+    "chai": "1.x"
   }
 }
